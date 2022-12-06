@@ -16,23 +16,37 @@
 
     <main class="py-3 px-1">
         <div class="d-flex gap-2">
-            <input type="text" class="form-control">
-            <button class="btn btn-info">Check</button>
+            <input type="text" id="input" class="form-control">
+            <button class="btn btn-info" id="btn">Check</button>
 
         </div>
 
         <div class="info my-3">
             <div class="d-flex justify-content-between align-items-center">
                 <i class="fa-solid fa-map-marker text-danger"></i>
-                <p>Nigeria</p>
+                <p id="ctr"></p>
 
             </div>
 
-            <div class="d-flex justify-content-between align-items-center">
-                <i class="fa-solid fa-sun text-warning"></i>
-                <p>36c</p>
+            <div class="d-flex justify-content-between align-items-center my-1">
+                <i class="fa-solid fa-temperature-three-quarters text-danger"></i>
+                <p id="tmp"></p>
 
             </div>
+
+            <div class="d-flex justify-content-between align-items-center my-1">
+                <i class="fa-solid fa-earth-oceania text-warning"></i>
+                <p id="sunrise"></p>
+
+            </div>
+
+            <div class="d-flex justify-content-between align-items-center my-1">
+                <i class="fa-solid fa-earth-oceania text-secondary"></i>
+                <p id="sunset"></p>
+
+            </div>
+
+            <p class="text-center text-shadow" id="desc"></p>
         </div>
     </main>
 
@@ -40,5 +54,6 @@
     
     <script src="./jquery-3.6.1.js"></script>
     <script src="./bootstrap.bundle.min.js"></script>
+    <script src="./script.js"></script>
 </body>
 </html>
